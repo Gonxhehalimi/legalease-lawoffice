@@ -1,0 +1,11 @@
+# Netlify reads this file automatically and applies these headers to every
+# response. This is where CSP actually matters, since this is what serves
+# the HTML pages visitors load (the Express backend only returns JSON).
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: geolocation=(), camera=(), microphone=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.google.com; connect-src 'self' https://legalease-lawoffice.onrender.com; base-uri 'self'; frame-ancestors 'self'
