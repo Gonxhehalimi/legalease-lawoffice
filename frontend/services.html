@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | LegalEase AI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-wrapper">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo2.png" alt="LegalEase AI Logo" class="logo-img">
+                    <h1 class="logo-text" data-translate-header="lawyerName">Lawyer Erëmira Halimi-Hamidi</h1>
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" data-translate-nav="home">Home</a></li>
+                        <li><a href="about.html" data-translate-nav="about">About</a></li>
+                        <li><a href="services.html" class="active" data-translate-nav="services">Services</a></li>
+                        <li><a href="contact.html" data-translate-nav="contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="language-switcher">
+                    <select id="languageSwitcher" onchange="setLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="sq">Albanian</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="services container">
+        <h3 data-translate-services="sectionTitle">Areas of Expertise</h3>
+        <p class="services-intro" data-translate-services="introText">
+        At the Law Office of Erëmira Halimi-Hamidi, each matter is approached with professionalism, precision, and a strong commitment to client service. With extensive experience across key areas of legal practice, we provide clear guidance and tailored solutions that uphold the highest standards of integrity. Our focus is to ensure that every client receives reliable, informed, and effective representation.
+        </p>
+
+        <div class="services-grid">
+        <div class="service-card">
+            <h4 data-translate-services="penalLaw.title">⚖️ Penal Law</h4>
+            <p data-translate-services="penalLaw.intro">Providing legal defense and representation in all criminal proceedings before the Basic Courts, Courts of Appeal, and the Supreme Court.</p>
+        </div>
+
+        <div class="service-card">
+            <h4 data-translate-services="civilLaw.title">📜 Civil Law</h4>
+            <p data-translate-services="civilLaw.intro">Offering professional representation in civil disputes and procedures before Kosovo courts and relevant institutions.</p>
+        </div>
+
+        <div class="service-card">
+            <h4 data-translate-services="administrativeLaw.title">🏛️ Administrative Law</h4>
+            <p data-translate-services="administrativeLaw.intro">Supporting clients in procedures with public authorities, administrative bodies, and inspection agencies.</p>
+        </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container footer-container">
+        <div class="footer-left">
+            <h3 data-translate-footer="lawyerName">⚖️ Lawyer Erëmira Halimi-Hamidi</h3>
+            <p data-translate-footer="tagline">Empowering clients with modern, intelligent legal services.</p>
+        </div>
+        <div class="footer-right">
+            <p>📍 Rruga Marie Shllaku, Gjilan 60000</p>
+            <p>📞 (383) 45-300-791</p>
+            <p>✉️ halimieremira@gmail.com</p>
+            <p>🕐 <span data-translate-contact="officeHours">Office Hours</span>: <span data-translate-contact="hours">8:00 AM - 4:00 PM</span></p>
+        </div>
+        </div>
+        <p class="copyright" data-translate-footer="copyright">© 2025 LegalEase AI | All Rights Reserved</p>
+    </footer>
+    <script src="js/config.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

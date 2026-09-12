@@ -1,0 +1,33 @@
+CREATE DATABASE IF NOT EXISTS legaleaseai;
+USE legaleaseai;
+
+CREATE TABLE IF NOT EXISTS consultations (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  full_name VARCHAR(100) NOT NULL,
+  email VARCHAR(150) NOT NULL,
+  phone VARCHAR(30) NOT NULL,
+  legal_service VARCHAR(100) NOT NULL,
+  preferred_date DATE NOT NULL,
+  preferred_time VARCHAR(50) NOT NULL,
+  message TEXT,
+  status VARCHAR(30) DEFAULT 'Pending',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS contact_messages (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(150) NOT NULL,
+  phone VARCHAR(30),
+  subject VARCHAR(150) NOT NULL,
+  message TEXT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS chatbot_messages (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_message TEXT NOT NULL,
+  bot_response TEXT NOT NULL,
+  language VARCHAR(10) DEFAULT 'en',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

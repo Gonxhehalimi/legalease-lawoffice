@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | LegalEase AI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-wrapper">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo2.png" alt="LegalEase AI Logo" class="logo-img">
+                    <h1 class="logo-text" data-translate-header="lawyerName">Lawyer Erëmira Halimi-Hamidi</h1>
+                </a>
+        </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="header-right">
+        <nav>
+            <ul>
+                        <li><a href="index.html" data-translate-nav="home">Home</a></li>
+                        <li><a href="about.html" class="active" data-translate-nav="about">About</a></li>
+                        <li><a href="services.html" data-translate-nav="services">Services</a></li>
+                        <li><a href="contact.html" data-translate-nav="contact">Contact</a></li>
+            </ul>
+        </nav>
+                <div class="language-switcher">
+                    <select id="languageSwitcher" onchange="setLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="sq">Albanian</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="about-page container">
+        <div class="about-text">
+        <h3 data-translate-about="sectionTitle">Who We Are</h3>
+        <div data-translate-about="sectionText">
+          <p>The Law Office of Erëmira Halimi-Hamidi is founded on a commitment to guide clients with honesty, dedication, and clear legal support. We know that legal matters can feel challenging, which is why our focus is always on making the process easier to understand and more comfortable for every client.</p>
+          <p>Led by Attorney Erëmira Halimi-Hamidi, the office offers attentive and reliable assistance to individuals, families, and businesses across a range of legal areas. Each client receives personal attention, meaningful communication, and solutions tailored to their unique needs. We take the time to listen, understand, and respond with professionalism, care, and respect.</p>
+          <p>Our mission is to be a legal partner you can trust—someone who stands beside you, explains every step clearly, and works tirelessly to protect your rights and interests. With a blend of knowledge, compassion, and dedication, the Law Office of Erëmira Halimi-Hamidi provides legal support you can truly rely on.</p>
+        </div>
+        </div>
+        <div class="about-image">
+        <img src="images/picture.jpg" alt="Our Office" />
+        <img src="images/picture1.jpg" alt="Our Office" />
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container footer-container">
+        <div class="footer-left">
+            <h3 data-translate-footer="lawyerName">⚖️ Lawyer Erëmira Halimi-Hamidi</h3>
+            <p data-translate-footer="tagline">Empowering clients with modern, intelligent legal services.</p>
+        </div>
+        <div class="footer-right">
+            <p>📍 Rruga Marie Shllaku, Gjilan 60000</p>
+            <p>📞 (383) 45-300-791</p>
+            <p>✉️ halimieremira@gmail.com</p>
+            <p>🕐 <span data-translate-contact="officeHours">Office Hours</span>: <span data-translate-contact="hours">8:00 AM - 4:00 PM</span></p>
+        </div>
+        </div>
+        <p class="copyright" data-translate-footer="copyright">© 2025 LegalEase AI | All Rights Reserved</p>
+    </footer>
+    <script src="js/config.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | LegalEase AI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container header-wrapper">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo2.png" alt="LegalEase AI Logo" class="logo-img">
+                    <h1 class="logo-text" data-translate-header="lawyerName">Lawyer Erëmira Halimi-Hamidi</h1>
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" data-translate-nav="home">Home</a></li>
+                        <li><a href="about.html" data-translate-nav="about">About</a></li>
+                        <li><a href="services.html" data-translate-nav="services">Services</a></li>
+                        <li><a href="contact.html" class="active" data-translate-nav="contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="language-switcher">
+                    <select id="languageSwitcher" onchange="setLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="sq">Albanian</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="contact-info container">
+        <div class="contact-details">
+        <h3 data-translate-contact="officeTitle">Erëmira Halimi-Hamidi Law Office</h3>
+        <p>📍 <strong data-translate-contact="address">Address</strong>: Rruga Marie Shllaku, Gjilan 60000</p>
+        <p>📞 <strong data-translate-contact="phone">Phone</strong>: (383) 45-300-791</p>
+        <p>✉️ <strong data-translate-contact="email">Email</strong>: halimieremira@gmail.com</p>
+        <p>🕐 <strong data-translate-contact="officeHours">Office Hours</strong>: <span data-translate-contact="hours">8:00 AM - 4:00 PM</span></p>
+        </div>
+
+        <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.02705690883!2d21.47682571129938!3d42.46971322804737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1354f2cba4b17d6b%3A0x2a6f9e2764e62d37!2sRruga%20Marie%20Shllaku%2C%20Gjilan%2060000!5e0!3m2!1sen!2sus!4v1762399407763!5m2!1sen!2sus"
+            width="100%"
+            height="400"
+            style="border:0; border-radius: 10px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+    </section>
+
+    <section class="google-form-section">
+        <div class="container forms-grid">
+            <div class="google-form-wrapper booking-form">
+                <h3 data-translate-contact="bookingTitle">Book a Consultation</h3>
+                <p data-translate-contact="bookingSubtitle">Fill out the form below to request a consultation. We'll get back to you as soon as possible.</p>
+
+                <div id="consultationSuccess" class="form-success"></div>
+                <div id="consultationError" class="form-error"></div>
+
+                <form id="consultationForm" novalidate>
+                    <div class="honeypot-field" aria-hidden="true">
+                        <label for="consultationWebsite">Website</label>
+                        <input id="consultationWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="consultationFullName" data-translate-contact="formName">Full Name</label>
+                        <input id="consultationFullName" name="full_name" type="text" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="consultationEmail" data-translate-contact="formEmail">Email Address</label>
+                        <input id="consultationEmail" name="email" type="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="consultationPhone" data-translate-contact="formPhone">Phone Number</label>
+                        <input id="consultationPhone" name="phone" type="text" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="consultationService" data-translate-contact="formService">Service Needed</label>
+                        <select id="consultationService" name="legal_service" required>
+                            <option value="" data-translate-contact="selectService">Select a service</option>
+                            <option value="Family Law" data-translate-contact="familyLaw">Family Law</option>
+                            <option value="Corporate Law" data-translate-contact="corporateLaw">Corporate Law</option>
+                            <option value="Immigration Law" data-translate-contact="immigrationLaw">Immigration Law</option>
+                            <option value="Criminal Defense" data-translate-contact="criminalDefense">Criminal Defense</option>
+                            <option value="Real Estate Law" data-translate-contact="realEstateLaw">Real Estate Law</option>
+                            <option value="Contract Law" data-translate-contact="contractLaw">Contract Law</option>
+                            <option value="Other" data-translate-contact="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="consultationDate" data-translate-contact="formDate">Preferred Date</label>
+                        <input id="consultationDate" name="preferred_date" type="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="consultationTime" data-translate-contact="formTime">Preferred Time</label>
+                        <input id="consultationTime" name="preferred_time" type="time" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="consultationMessage" data-translate-contact="formMessage">Message (Optional)</label>
+                        <textarea id="consultationMessage" name="message" rows="4"></textarea>
+                    </div>
+
+                    <button id="consultationSubmitBtn" class="form-submit" type="submit" data-translate-contact="formSubmit">Submit Request</button>
+                </form>
+            </div>
+
+            <div class="google-form-wrapper booking-form">
+                <h3 data-translate-contact="contactMessageTitle">Send a Contact Message</h3>
+                <p data-translate-contact="contactMessageSubtitle">Use this form for general inquiries and we will reply as soon as possible.</p>
+
+                <div id="contactSuccess" class="form-success"></div>
+                <div id="contactError" class="form-error"></div>
+
+                <form id="contactForm" novalidate>
+                    <div class="honeypot-field" aria-hidden="true">
+                        <label for="contactWebsite">Website</label>
+                        <input id="contactWebsite" name="website" type="text" tabindex="-1" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactName" data-translate-contact="contactName">Full Name</label>
+                        <input id="contactName" name="name" type="text" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactEmail" data-translate-contact="contactEmail">Email Address</label>
+                        <input id="contactEmail" name="email" type="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactPhone" data-translate-contact="contactPhone">Phone Number</label>
+                        <input id="contactPhone" name="phone" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactSubject" data-translate-contact="contactSubject">Subject</label>
+                        <input id="contactSubject" name="subject" type="text" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactMessageText" data-translate-contact="contactMessageLabel">Message</label>
+                        <textarea id="contactMessageText" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button id="contactSubmitBtn" class="form-submit" type="submit" data-translate-contact="contactSubmit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+        <div class="footer-left">
+            <h3 data-translate-footer="lawyerName">⚖️ Lawyer Erëmira Halimi-Hamidi</h3>
+            <p data-translate-footer="tagline">Empowering clients with modern, intelligent legal services.</p>
+        </div>
+        <div class="footer-right">
+            <p>📍 Rruga Marie Shllaku, Gjilan 60000</p>
+            <p>📞 (383) 45-300-791</p>
+            <p>✉️ halimieremira@gmail.com</p>
+            <p>🕐 <span data-translate-contact="officeHours">Office Hours</span>: <span data-translate-contact="hours">8:00 AM - 4:00 PM</span></p>
+        </div>
+        </div>
+        <p class="copyright" data-translate-footer="copyright">© 2025 LegalEase AI | All Rights Reserved</p>
+    </footer>
+    <script src="js/config.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
