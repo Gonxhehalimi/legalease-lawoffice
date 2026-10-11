@@ -752,8 +752,30 @@ body[data-lang="sq"] .testimonial-card[data-lang="en"] {
 
 @media (min-width: 1000px) {
   .services-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.service-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.service-list li {
+  position: relative;
+  padding-left: 1.4em;
+  margin-bottom: 0.7em;
+  color: #101010;
+  line-height: 1.6;
+}
+
+.service-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #D2AA6D;
+  font-weight: bold;
 }
 
 .service-card {
@@ -1228,7 +1250,8 @@ footer .copyright {
 
 .forms-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  grid-template-columns: minmax(280px, 700px);
+  justify-content: center;
   gap: 2em;
   align-items: start;
 }

@@ -148,69 +148,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const contactForm = document.getElementById("contactForm");
-  if (contactForm) {
-    const submitBtn = document.getElementById("contactSubmitBtn");
-    const successEl = document.getElementById("contactSuccess");
-    const errorEl = document.getElementById("contactError");
-
-    contactForm.addEventListener("submit", async (e) => {
-      e.preventDefault();
-
-      const name = contactForm.name.value.trim();
-      const email = contactForm.email.value.trim();
-      const phone = contactForm.phone.value.trim();
-      const subject = contactForm.subject.value.trim();
-      const message = contactForm.message.value.trim();
-      const website = contactForm.website ? contactForm.website.value.trim() : "";
-
-      if (!name || !email || !subject || !message) {
-        showFormStatus(
-          successEl,
-          errorEl,
-          "error",
-          getText("contact.formError", "Please fill in all required fields.")
-        );
-        return;
-      }
-
-      const originalText = submitBtn ? submitBtn.textContent : "";
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.textContent = getText("contact.submitLoading", "Sending...");
-      }
-
-      try {
-        await postJson(`${API_BASE_URL}/api/contact`, {
-          name,
-          email,
-          phone,
-          subject,
-          message,
-          website
-        });
-
-        showFormStatus(
-          successEl,
-          errorEl,
-          "success",
-          getText(
-            "contact.contactSuccess",
-            "Thank you! Your contact message has been sent. We will reply shortly."
-          )
-        );
-        contactForm.reset();
-      } catch (error) {
-        showFormStatus(successEl, errorEl, "error", error.message);
-      } finally {
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.textContent = originalText;
-        }
-      }
-    });
-  }
-
   // ===== Hero Slider =====
   const heroSection = document.querySelector(".hero");
   const slider = heroSection ? heroSection.querySelector(".slider") : null;

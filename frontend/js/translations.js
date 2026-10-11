@@ -31,34 +31,33 @@ const translations = {
       introText: "At the Law Office of Erëmira Halimi-Hamidi, each matter is approached with professionalism, precision, and a strong commitment to client service. With extensive experience across key areas of legal practice, we provide clear guidance and tailored solutions that uphold the highest standards of integrity. Our focus is to ensure that every client receives reliable, informed, and effective representation.",
       expertiseLabel: "Our expertise includes:",
       penalLaw: {
-        title: "⚖️ Penal Law",
-        intro: "Providing legal defense and representation in all criminal proceedings before the Basic Courts, Courts of Appeal, and the Supreme Court.",
-        expertise1: "Penal offenses",
-        expertise2: "Detention and measures to secure presence",
-        expertise3: "Criminal investigations",
-        expertise4: "Misdemeanors",
-        expertise5: "Defense during police questioning and prosecution procedures",
-        expertise6: "Appeals and legal remedies"
+        title: "⚖️ Criminal Law",
+        item1: "Defense and representation in criminal proceedings",
+        item2: "Representation of defendants and injured parties",
+        item3: "Drafting of appeals, requests and submissions",
+        item4: "Representation before judicial bodies"
       },
       civilLaw: {
         title: "📜 Civil Law",
-        intro: "Offering professional representation in civil disputes and procedures before Kosovo courts and relevant institutions.",
-        expertise1: "Contract disputes",
-        expertise2: "Property and ownership claims",
-        expertise3: "Family law matters: divorce, custody, alimony",
-        expertise4: "Inheritance proceedings",
-        expertise5: "Compensation of damages",
-        expertise6: "Obligations and civil liabilities"
+        item1: "Property and contract disputes",
+        item2: "Compensation for damages",
+        item3: "Family and inheritance matters",
+        item4: "Debts and obligations",
+        item5: "Drafting and review of contracts"
       },
       administrativeLaw: {
         title: "🏛️ Administrative Law",
-        intro: "Supporting clients in procedures with public authorities, administrative bodies, and inspection agencies.",
-        expertise1: "Administrative appeals",
-        expertise2: "Challenging administrative decisions in the Basic Court – Department for Administrative Matters",
-        expertise3: "Permit and license procedures",
-        expertise4: "Public administration disputes",
-        expertise5: "Inspection fines and measures",
-        expertise6: "Social, pension, and employment administrative cases"
+        item1: "Appeals and requests against administrative decisions",
+        item2: "Representation in administrative proceedings",
+        item3: "Administrative disputes",
+        item4: "Matters involving public institutions and bodies"
+      },
+      economicLaw: {
+        title: "💼 Economic Law",
+        item1: "Representation of businesses and commercial companies",
+        item2: "Economic and business disputes",
+        item3: "Drafting and review of business contracts",
+        item4: "Obligations, debts and commercial disputes"
       }
     },
     // Contact page
@@ -90,15 +89,6 @@ const translations = {
       realEstateLaw: "Real Estate Law",
       contractLaw: "Contract Law",
       other: "Other",
-      contactMessageTitle: "Send a Contact Message",
-      contactMessageSubtitle: "Use this form for general inquiries and we will reply as soon as possible.",
-      contactName: "Full Name",
-      contactEmail: "Email Address",
-      contactPhone: "Phone Number",
-      contactSubject: "Subject",
-      contactMessageLabel: "Message",
-      contactSubmit: "Send Message",
-      contactSuccess: "Thank you! Your contact message has been sent. We will reply shortly.",
       submitLoading: "Sending..."
     },
     // Header
@@ -154,33 +144,32 @@ const translations = {
       expertiseLabel: "Ekspertiza jonë përfshin:",
       penalLaw: {
         title: "⚖️ E Drejta Penale",
-        intro: "Ofrojmë mbrojtje dhe përfaqësim ligjor në të gjitha procedurat penale para Gjykatave Bazë, Gjykatave të Apelit dhe Gjykata Supreme.",
-        expertise1: "Vepra penale",
-        expertise2: "Paraburgim dhe masa sigurie",
-        expertise3: "Procedura paraprake",
-        expertise4: "Kundërvajtjet",
-        expertise5: "Mbrojtje gjatë pyetjeve të policisë dhe procedurave të prokurorisë",
-        expertise6: "Ankesa dhe mjete juridike"
+        item1: "Mbrojtje dhe përfaqësim në procedurë penale",
+        item2: "Përfaqësim i të pandehurve dhe të dëmtuarve",
+        item3: "Hartim i ankesave, kërkesave dhe parashtresave",
+        item4: "Përfaqësim para organeve të drejtësisë"
       },
       civilLaw: {
         title: "📜 E Drejta Civile",
-        intro: "Ofrojmë përfaqësim profesional në mosmarrëveshjet dhe procedurat civile para gjyqësorëve të Kosovës dhe institucioneve përkatëse.",
-        expertise1: "Kontestet kontraktore",
-        expertise2: "Kontestet pronësore",
-        expertise3: "Çështjet e së drejtës së familjes: divorci, kujdestaria, ushqimi",
-        expertise4: "Procedurat e trashëgimisë",
-        expertise5: "Kompensimi i dëmit",
-        expertise6: "Detyrimet civile"
+        item1: "Konteste pronësore dhe kontraktore",
+        item2: "Kompensim dëmi",
+        item3: "Çështje familjare dhe trashëgimore",
+        item4: "Borxhe dhe detyrime",
+        item5: "Hartim dhe shqyrtim i kontratave"
       },
       administrativeLaw: {
         title: "🏛️ E Drejta Administrative",
-        intro: "Ndihmojmë klientët në procedurat me autoritetet publike, organet administrative dhe agjencitë e inspektimit.",
-        expertise1: "Ankesat administrative",
-        expertise2: "Kundërshtimi i vendimeve administrative në Gjykatën Bazë – Departamenti për Çështje Administrative",
-        expertise3: "Procedurat e lejeve dhe autorizimeve",
-        expertise4: "Mosmarrëveshjet me organet publike",
-        expertise5: "Gjobat dhe masat inspektuese",
-        expertise6: "Rastet administrative sociale, pensionale dhe të punësimit"
+        item1: "Ankesa dhe kërkesa ndaj vendimeve administrative",
+        item2: "Përfaqësim në procedura administrative",
+        item3: "Konteste administrative",
+        item4: "Çështje me institucione dhe organe publike"
+      },
+      economicLaw: {
+        title: "💼 E Drejta Ekonomike",
+        item1: "Përfaqësim i bizneseve dhe shoqërive tregtare",
+        item2: "Konteste ekonomike dhe afariste",
+        item3: "Hartim dhe shqyrtim i kontratave të biznesit",
+        item4: "Detyrime, borxhe dhe mosmarrëveshje tregtare"
       }
     },
     // Contact page
@@ -212,15 +201,6 @@ const translations = {
       realEstateLaw: "E Drejta e Pasurive të Paluajtshme",
       contractLaw: "E Drejta e Kontratave",
       other: "Tjetër",
-      contactMessageTitle: "Dërgo një Mesazh Kontakti",
-      contactMessageSubtitle: "Përdorni këtë formular për pyetje të përgjithshme dhe ne do të përgjigjemi sa më shpejt.",
-      contactName: "Emri i Plotë",
-      contactEmail: "Adresa e Email-it",
-      contactPhone: "Numri i Telefonit",
-      contactSubject: "Subjekti",
-      contactMessageLabel: "Mesazhi",
-      contactSubmit: "Dërgo Mesazhin",
-      contactSuccess: "Faleminderit! Mesazhi juaj i kontaktit u dërgua. Do të përgjigjemi së shpejti.",
       submitLoading: "Duke dërguar..."
     },
     // Header
