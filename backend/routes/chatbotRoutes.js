@@ -36,7 +36,7 @@ function ruleBasedReply(text, lang) {
   const t = String(text || "").toLowerCase();
 
   const officeAddress =
-    "Rruga Marie Shllaku, Gjilan 60000";
+    "Rr. Lufta e Gjilanit 44, Nr.97, Gjilan 60000";
   const officePhone = "(383) 45-300-791";
   const officeEmail = "halimieremira@gmail.com";
   const officeHoursEn = "Monday to Friday, 8:00 AM – 4:00 PM";

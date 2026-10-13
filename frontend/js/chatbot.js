@@ -203,7 +203,7 @@ class LegalChatbot {
       return {
         'shërbim|shërbime|services': 'Ne ofrojmë shërbime në fusha të ndryshme të ligjit: E Drejta e Familjes, E Drejta Korporative, E Drejta e Imigracionit, Mbrojtja Penale, E Drejta e Pasurive të Paluajtshme, dhe E Drejta e Kontratave. Për më shumë informacion, ju lutemi vizitoni faqen e shërbimeve.',
         'orar|orë|kohë|hours|time': 'Zyra jonë është e hapur nga e Hëna deri të Premte, nga ora 9:00 deri në 17:00. Për konsultime, ju lutemi rezervoni një takim.',
-        'kontakt|adresë|telefon|email|contact|address|phone': 'Mund të na kontaktoni në: 📍 Rruga Marie Shllaku, Gjilan 60000, 📞 (383) 45-300-791, ✉️ halimieremira@gmail.com',
+        'kontakt|adresë|telefon|email|contact|address|phone': 'Mund të na kontaktoni në: 📍 Rr. Lufta e Gjilanit 44, Nr.97, Gjilan 60000, 📞 (383) 45-300-791, ✉️ halimieremira@gmail.com',
         'konsultim|rezervim|booking|consultation|appointment': 'Për të rezervuar një konsultim, ju lutemi plotësoni formularin në faqen e kontaktit ose na telefononi direkt.',
         'çmim|kosto|pagesë|price|cost|fee': 'Çmimet variojnë në varësi të natyrës së çështjes ligjore. Për informacion më të detajuar për tarifat, ju lutemi na kontaktoni për një konsultim fillestar.',
         'divorç|divorce': 'Ne ofrojmë shërbime për procedurat e divorcit, duke përfshirë ndarjen e pasurisë, kujdestarinë e fëmijëve dhe mbështetjen për fëmijë. Për këshilla specifike, ju lutemi rezervoni një konsultim.',
@@ -213,7 +213,7 @@ class LegalChatbot {
       return {
         'service|services': 'We offer services in various areas of law: Family Law, Corporate Law, Immigration Law, Criminal Defense, Real Estate Law, and Contract Law. For more information, please visit our services page.',
         'hours|time|schedule': 'Our office is open Monday through Friday, from 9:00 AM to 5:00 PM. For consultations, please book an appointment.',
-        'contact|address|phone|email': 'You can reach us at: 📍 Rruga Marie Shllaku, Gjilan 60000, 📞 (383) 45-300-791, ✉️ halimieremira@gmail.com',
+        'contact|address|phone|email': 'You can reach us at: 📍 Rr. Lufta e Gjilanit 44, Nr.97, Gjilan 60000, 📞 (383) 45-300-791, ✉️ halimieremira@gmail.com',
         'consultation|booking|appointment': 'To book a consultation, please fill out the form on our contact page or call us directly.',
         'price|cost|fee': 'Pricing varies depending on the nature of the legal matter. For detailed information about our fees, please contact us for an initial consultation.',
         'divorce': 'We provide services for divorce proceedings, including property division, child custody, and child support. For specific advice, please book a consultation.',

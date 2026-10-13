@@ -1,5 +1,5 @@
 // Language management system
-let currentLanguage = localStorage.getItem('language') || 'en';
+let currentLanguage = localStorage.getItem('language') || 'sq';
 
 // Function to set language
 function setLanguage(lang) {

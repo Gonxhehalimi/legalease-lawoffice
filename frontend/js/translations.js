@@ -107,7 +107,7 @@ const translations = {
       placeholder: "Ask me a question...",
       send: "Send",
       disclaimer: "Note: This chatbot provides general information only and does not constitute legal advice. Please consult with an attorney for specific legal matters.",
-      welcome: "Hello! Thank you for contacting the Erëmira Halimi-Hamidi Law Office.\n\nHere is our office information:\n\nAddress: Rruga Marie Shllaku, Gjilan 60000\n\nPhone: (383) 45-300-791\n\nEmail: halimieremira@gmail.com\n\nOffice Hours: 8:00 AM – 4:00 PM\n\nHow can I assist you today? I can help answer general questions and provide guidance related to our legal services.",
+      welcome: "Hello! Thank you for contacting the Erëmira Halimi-Hamidi Law Office.\n\nHere is our office information:\n\nAddress: Rr. Lufta e Gjilanit 44, Nr.97, Gjilan 60000\n\nPhone: (383) 45-300-791\n\nEmail: halimieremira@gmail.com\n\nOffice Hours: 8:00 AM – 4:00 PM\n\nHow can I assist you today? I can help answer general questions and provide guidance related to our legal services.",
       noAnswer: "I'm sorry, I don't have information about that specific topic. For detailed legal advice, please contact us directly or book a consultation.",
       close: "Close"
     }
@@ -219,7 +219,7 @@ const translations = {
       placeholder: "Më bëj një pyetje...",
       send: "Dërgo",
       disclaimer: "Shënim: Ky chatbot ofron vetëm informacion të përgjithshëm dhe nuk përbën këshillë ligjore. Ju lutemi konsultohuni me një avokat për çështje ligjore specifike.",
-      welcome: "Përshëndetje! Faleminderit që kontaktuat Zyrën Ligjore të Erëmirës Halimi-Hamidi.\n\nKëtu është informacioni i zyrës sonë:\n\nAdresa: Rruga Marie Shllaku, Gjilan 60000\n\nTelefoni: (383) 45-300-791\n\nEmail: halimieremira@gmail.com\n\nOrët e Zyrës: 8:00 AM – 4:00 PM\n\nSi mund t'ju ndihmoj sot? Mund të ndihmoj në përgjigjen e pyetjeve të përgjithshme dhe të ofroj udhëzime në lidhje me shërbimet tona ligjore.",
+      welcome: "Përshëndetje! Faleminderit që kontaktuat Zyrën Ligjore të Erëmirës Halimi-Hamidi.\n\nKëtu është informacioni i zyrës sonë:\n\nAdresa: Rr. Lufta e Gjilanit 44, Nr.97, Gjilan 60000\n\nTelefoni: (383) 45-300-791\n\nEmail: halimieremira@gmail.com\n\nOrët e Zyrës: 8:00 AM – 4:00 PM\n\nSi mund t'ju ndihmoj sot? Mund të ndihmoj në përgjigjen e pyetjeve të përgjithshme dhe të ofroj udhëzime në lidhje me shërbimet tona ligjore.",
       noAnswer: "Më vjen keq, nuk kam informacion për atë temë specifike. Për këshilla ligjore të detajuara, ju lutemi na kontaktoni drejtpërdrejt ose rezervoni një konsultim.",
       close: "Mbyll"
     }
